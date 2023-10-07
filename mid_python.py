@@ -10,7 +10,7 @@ class Hall:
             row = [0 for a in range(cols)]
             self.__seats.append(row)
     # way 2
-    # self.__seats = [["free" for _ in range(cols)] for _ in range(rows)]  # private attribute
+    # self.__seats = [["free" for _ in range(cols)] for _ in range(rows)] 
 
     def _entry_show(self, id, movie_name, time):
         self.__show_list.append({"id": id, "movie_name": movie_name, "time": time})
@@ -62,8 +62,6 @@ class Hall:
                     print()
 
 
-
-
 class cinema_management_mystem:
     def __init__(self):
         self.halls = []
@@ -94,11 +92,8 @@ class cinema_management_mystem:
         else:
             print(f"Hall not found.")
 
-
-
     def show_menu(self):
         while True:
-            print("\nMenu:")
             print("1. View all shows today")
             print("2. View available seats")
             print("3. Book tickets")
@@ -140,4 +135,4 @@ system.halls[0]._entry_show(id=1, movie_name="KGF3", time="9:00 PM")
 system.halls[0]._entry_show(id=2, movie_name="PORAN", time="10:00 PM")
 system.halls[1]._entry_show(id=3, movie_name="SURONGO", time="11:30 PM")
 
-system.
+system.show_menu()
