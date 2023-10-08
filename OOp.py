@@ -352,3 +352,20 @@
 #
 # father=Father('BMW')
 # print(father.driving())
+
+
+##super()
+# class Animal:
+#     def speak(self):
+#         return "Animal speaks"
+
+# class Dog(Animal):
+#     def speak(self):
+#         # Calling the speak method of the superclass (Animal)
+#         # using the super() keyword
+#         return super().speak() + " and barks"
+
+# # Usage
+# dog = Dog()
+# print(dog.speak())  
+
