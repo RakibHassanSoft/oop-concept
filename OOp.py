@@ -1,3 +1,25 @@
+#super()
+class Parent:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, {self.name}!")
+
+class Child(Parent):
+    def __init__(self, name, age):
+        super().__init__(name)  # Calling the constructor of the parent class
+        self.age = age
+
+    def greet(self):  # Overriding the greet method of the parent class
+        super().greet()  # Calling the greet method of the parent class
+        print(f"You are {self.age} years old.")
+
+# Example usage
+child_obj = Child("Alice", 10)
+child_obj.greet()
+
+
 #........................................polymorphism................
 #Overloading
 # class Calculator:
